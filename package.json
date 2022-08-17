@@ -1,0 +1,27 @@
+{
+  "name": "chat-moduler",
+  "version": "1.0.0",
+  "description": "A conversation tool in Javascript based in modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThalesLudwig/chat-moduler.git"
+  },
+  "keywords": [
+    "chat",
+    "conversation",
+    "module"
+  ],
+  "author": "thalesludwig",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThalesLudwig/chat-moduler/issues"
+  },
+  "homepage": "https://github.com/ThalesLudwig/chat-moduler#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
