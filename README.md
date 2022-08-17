@@ -54,7 +54,7 @@ If the language, en-US will always be used as default.
 
 ## Modules
 
-All Modules are simple Javascript objects with <i>name</i>, <i>expressions</i>, and the <i>module</i> itself, that will receive as argument an object with three properties: **lang**, **context**, and **expression**, and return the expected response with no specific format.
+All Modules are simple Javascript objects with <i>name</i>, <i>expressions</i>, and the <i>module</i> itself, a function that will receive as argument an object with three properties: **lang**, **context**, and **expression**, and return the expected response with no specific format.
 
 - lang: the language currently used by the user, such as "en-US" or "pt-BR"
 - context: an array of previous user inputs
@@ -74,6 +74,7 @@ const MyModule = {
 };
 ```
 
+The expressions should always be provided without diacritics.
 Inside the module, you are free to implement whatever logic suits best your application and return the data format desired.
 
 <br/>
@@ -93,7 +94,7 @@ I am accepting contributions. Any contributions you make, be it bug fixes or new
 
 ## License
 
-Distributed under the MIT License.
+Distributed under the ISC License.
 
 <br/>
 
