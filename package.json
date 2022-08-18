@@ -1,6 +1,6 @@
 {
   "name": "chat-moduler",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "A conversation tool in Javascript based in modules",
   "main": "index.js",
   "scripts": {
