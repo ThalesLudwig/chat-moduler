@@ -58,7 +58,7 @@ All Modules are simple Javascript objects with <i>name</i>, <i>expressions</i>, 
 
 - lang: the language currently used by the user, such as "en-US" or "pt-BR"
 - context: an array of previous user inputs
-- expression: the word or expression inputed by the user that was recognized by the module
+- expression: the word or expression input by the user that was recognized by the module
 
 ```
 const MyModule = {
@@ -74,7 +74,10 @@ const MyModule = {
 };
 ```
 
-The expressions should always be provided without diacritics.
+Make sure the name of the module is unique.
+<br/>
+The expressions should always be provided without diacritics. These are the words or expressions input by the user that should fallback into this module.
+<br/>
 Inside the module, you are free to implement whatever logic suits best your application and return the data format desired.
 
 <br/>
