@@ -1,7 +1,7 @@
-const storage = require("./storage");
+import { get } from "./storage";
 
 function dictionary(data, lang) {
-  const source = storage.get()[lang] || [];
+  const source = get()[lang] || [];
 
   const expressionsFound = source.filter(({ expression }) => {
     // TO DO - improve matching logic

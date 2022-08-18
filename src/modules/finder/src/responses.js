@@ -1,4 +1,4 @@
-const LANG_CONSTANTS = require("../../../constants/lang");
+import { LANG as LANG_CONSTANTS } from "../../../constants/lang";
 
 const PT_BR = [
   "Não entendi. Pode reformular a frase?",
@@ -14,9 +14,7 @@ const EN_US = [
   "Sorry, I can't answer that.",
 ];
 
-const LANG = {
+export const LANG = {
   [LANG_CONSTANTS.PT_BR]: PT_BR,
   [LANG_CONSTANTS.EN_US]: EN_US,
 };
-
-module.exports = LANG;

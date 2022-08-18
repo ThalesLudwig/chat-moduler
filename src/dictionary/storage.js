@@ -1,8 +1,8 @@
 let storage = [];
 
-const get = () => storage;
+export const get = () => storage;
 
-const set = (newStorage) => (storage = newStorage);
+export const set = (newStorage) => (storage = newStorage);
 
 const add = (lang, expression, module, operation) => {
   if (!expression || !module) return;
@@ -13,7 +13,7 @@ const add = (lang, expression, module, operation) => {
   });
 };
 
-const initialize = (modules, languages) => {
+export const initialize = (modules, languages) => {
   modules.forEach((moduleObj) => {
     languages.forEach((language) => {
       if (!storage[language]) storage[language] = [];
@@ -21,10 +21,4 @@ const initialize = (modules, languages) => {
       expressions.forEach((exp) => add(language, exp, moduleObj.name, moduleObj.module));
     });
   });
-};
-
-module.exports = {
-  get,
-  initialize,
-  set,
 };

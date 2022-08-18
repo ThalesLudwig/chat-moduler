@@ -1,4 +1,5 @@
-const LANG = require("../constants/lang");
+import { LANG } from "../constants/lang";
+
 const dictionary = require("../dictionary");
 
 function normalizeDiacritics(input) {
@@ -6,7 +7,7 @@ function normalizeDiacritics(input) {
   return input.normalize("NFD").replace(/\p{Diacritic}/gu, "");
 }
 
-function parser(input) {
+export function parser(input) {
   const data = !!input && !!input.data ? input.data.trim() : "";
   const lang = !!input && !!input.lang ? input.lang : LANG.EN_US;
 
@@ -15,5 +16,3 @@ function parser(input) {
   const content = { intentions, input: data, lang };
   return content;
 }
-
-module.exports = parser;

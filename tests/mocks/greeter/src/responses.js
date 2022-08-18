@@ -12,9 +12,7 @@ const EN_US = {
   THANK_GENERIC: "You're welcome!",
 };
 
-const LANG = {
+export const LANG = {
   "pt-BR": PT_BR,
   "en-US": EN_US,
 };
-
-module.exports = LANG;

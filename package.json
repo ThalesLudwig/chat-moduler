@@ -4,7 +4,8 @@
   "description": "A conversation tool in Javascript based in modules",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,9 @@
   },
   "homepage": "https://github.com/ThalesLudwig/chat-moduler#readme",
   "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
     "jest": "^28.1.3"
   }
 }

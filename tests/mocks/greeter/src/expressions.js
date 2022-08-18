@@ -2,7 +2,7 @@ const OPERATIONS = require("./operations");
 const PT_BR = require("../pt-BR");
 const EN_US = require("../en-US");
 
-const LANG_ENUM = {
+export const LANG_ENUM = {
   "pt-BR": {
     [PT_BR[0]]: OPERATIONS.THANK_POLITENESS,
     [PT_BR[1]]: OPERATIONS.GREET_SHORT,
@@ -18,5 +18,3 @@ const LANG_ENUM = {
     [EN_US[5]]: OPERATIONS.GREET_SHORT,
   },
 };
-
-module.exports = LANG_ENUM;

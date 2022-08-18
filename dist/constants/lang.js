@@ -1,4 +1,10 @@
-export const LANG = {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.LANG = void 0;
+var LANG = {
   AF_ZA: "af-ZA",
   AR_AE: "ar-AE",
   AR_BH: "ar-BH",
@@ -145,5 +151,6 @@ export const LANG = {
   ZH_MO: "zh-MO",
   ZH_SG: "zh-SG",
   ZH_TW: "zh-TW",
-  ZU_ZA: "zu-ZA",
+  ZU_ZA: "zu-ZA"
 };
+exports.LANG = LANG;

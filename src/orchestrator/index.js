@@ -1,23 +1,21 @@
-const parser = require("../parser");
-const context = require("../context");
-const dealer = require("../dealer");
-const Finder = require("../modules/finder");
-const LANG_CONSTANTS = require("../constants/lang");
+import { parser } from "../parser";
+import { add as addToContext, get as getContext } from "../context";
+import { dealer } from "../dealer";
+import { Finder } from "../modules/finder";
+import { LANG } from "../constants/lang";
 
-const orchestrator = (input) => {
+export const orchestrator = (input) => {
   const content = parser(input); // verify what modules match with the user expression
-  context.add(content);
+  addToContext(content);
 
   if (content.intentions.length === 0) {
     // if nothing matched, Finder will return some default messages
     const nothingFound = Finder({
-      context: context.get(),
-      lang: input.lang || LANG_CONSTANTS.EN_US,
+      context: getContext(),
+      lang: input.lang || LANG.EN_US,
     });
     return nothingFound;
   }
-  const response = dealer(content, context.get()); // Dealer will call the right Module
+  const response = dealer(content, getContext()); // Dealer will call the right Module
   return response;
 };
-
-module.exports = orchestrator;

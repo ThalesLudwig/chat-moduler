@@ -1,8 +1,8 @@
-const RESPONSES = require("./src/responses");
-const CONTEXT = require("./src/context");
-const getRandomIndexFor = require("../../helpers/getRandomIndex");
+import { LANG as RESPONSES } from "./src/responses";
+import { LANG as CONTEXT } from "./src/context";
+import { getRandomIndexFor } from "../../helpers/getRandomIndex";
 
-const Finder = ({ lang, context }) => {
+export const Finder = ({ lang, context }) => {
   const grammar = RESPONSES[lang];
   const contextResponses = CONTEXT[lang];
   const contextFirstAttempt = context[context.length - 2];
@@ -16,5 +16,3 @@ const Finder = ({ lang, context }) => {
 
   return getRandomIndexFor(grammar);
 };
-
-module.exports = Finder;

@@ -1,6 +1,6 @@
-const { chat, initialize } = require("../");
-const FinderResponses = require("../src/modules/finder/src/responses");
-const Greeter = require("./mocks/greeter");
+import { chat, initialize } from "../";
+import { LANG as FinderResponses } from "../src/modules/finder/src/responses";
+import { Greeter } from "./mocks/greeter";
 const GreeterExpressionsPtBR = require("./mocks/greeter/pt-BR");
 const GreeterExpressionsEnUS = require("./mocks/greeter/en-US");
 

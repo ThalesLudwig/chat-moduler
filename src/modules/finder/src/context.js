@@ -1,4 +1,4 @@
-const LANG_CONSTANTS = require("../../../constants/lang");
+import { LANG as LANG_CONSTANTS } from "../../../constants/lang";
 
 /*
  * Generates additional contextual responses
@@ -8,7 +8,7 @@ const PT_BR = {
   ATTEMPT_1: [
     "Estranho, não entendi essa também. :/",
     "Desculpe de novo, mas não entendi.",
-    "Acho que estou com algum bug hoje, mas continuo não entendendo."
+    "Acho que estou com algum bug hoje, mas continuo não entendendo.",
   ],
   ATTEMPT_2: [
     "Isso está ficando constragendor, mas realmente não estou entendendo.",
@@ -21,7 +21,7 @@ const EN_US = {
   ATTEMPT_1: [
     "Weird, I didn't get that either. :/",
     "Sorry again, but I can't understand that.",
-    "I think I have a bug today, because I still don't understand you."
+    "I think I have a bug today, because I still don't understand you.",
   ],
   ATTEMPT_2: [
     "This is getting embarrassing, but I REALLY can't understand you.",
@@ -30,9 +30,7 @@ const EN_US = {
   ],
 };
 
-const LANG = {
+export const LANG = {
   [LANG_CONSTANTS.PT_BR]: PT_BR,
   [LANG_CONSTANTS.EN_US]: EN_US,
 };
-
-module.exports = LANG;

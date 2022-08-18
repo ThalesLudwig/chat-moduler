@@ -1,9 +1,7 @@
-const EXPRESSIONS = require("./src/expressions");
-const RESPONSES = require("./src/responses");
+import { LANG_ENUM as EXPRESSIONS } from "./src/expressions";
+import { LANG as RESPONSES } from "./src/responses";
 
-const Greeter = ({ expression, lang }) => {
+export const Greeter = ({ expression, lang }) => {
   const grammar = EXPRESSIONS[lang];
   return RESPONSES[lang][grammar[expression]];
 };
-
-module.exports = Greeter;
