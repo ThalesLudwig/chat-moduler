@@ -81,7 +81,7 @@ Inside the module, you are free to implement whatever logic suits best your appl
 
 ## Roadmap
 
-- Add Typescript support;
+- Better Typescript support;
 - Improve the expression-matching logic;
 
 <br/>

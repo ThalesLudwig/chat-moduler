@@ -1,6 +1,6 @@
 {
   "name": "chat-moduler",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "A conversation tool in Javascript based in modules",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,7 @@
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.18.10",
     "@babel/preset-env": "^7.18.10",
-    "jest": "^28.1.3"
+    "jest": "^28.1.3",
+    "typescript": "^4.7.4"
   }
 }
