@@ -2,7 +2,6 @@
 
 A conversation tool in Javascript based in modules.
 
-<br/>
 
 ## Project Status
 This was a little project I created for personal use before the advent of AI.
