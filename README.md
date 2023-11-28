@@ -4,6 +4,13 @@ A conversation tool in Javascript based in modules.
 
 <br/>
 
+## Project Status
+This was a little project I created for personal use before the advent of AI.
+With all these ChatGPT-like tools available, this library hasn't aged well.
+Chat-moduler is now a legacy project, and I won't be giving it any more updates.
+
+<br/>
+
 ## About the project
 
 Chat-Moduler is an multilingual, context-aware, open-source chatbot built on the idea of being entirely modular. It gives you the freedom of implementing your module logic and returning the data in whatever structure best suits your application, ready
