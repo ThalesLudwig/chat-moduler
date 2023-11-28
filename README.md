@@ -4,8 +4,8 @@ A conversation tool in Javascript based in modules.
 
 
 ## Project Status
-This was a little project I created for personal use before the advent of AI.
-With all these ChatGPT-like tools available, this library hasn't aged well.
+This was a little project I created for personal use before the advent of AI.<br/>
+With all these ChatGPT-like tools available, this library hasn't aged well.<br/>
 Chat-moduler is now a legacy project, and I won't be giving it any more updates.
 
 <br/>
