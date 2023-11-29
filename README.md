@@ -88,19 +88,6 @@ Inside the module, you are free to implement whatever logic suits best your appl
 
 <br/>
 
-## Roadmap
-
-- Better Typescript support;
-- Improve the expression-matching logic;
-
-<br/>
-
-## Contributing
-
-I am accepting contributions. Any contributions you make, be it bug fixes or new features, are greatly appreciated.
-
-<br/>
-
 ## License
 
 Distributed under the ISC License.
